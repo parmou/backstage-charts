@@ -80,6 +80,9 @@ ingress:
 # @default -- See below
 backstage:
 
+  # If you use HPA, set this to true
+  autoscaling: enabled
+
   # -- Number of deployment replicas
   replicas: 1
 
