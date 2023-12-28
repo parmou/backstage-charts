@@ -35,6 +35,12 @@
                     "title": "Backstage container command arguments",
                     "type": "array"
                 },
+                "autoscaling": {
+                    "default": false,
+                    "title": "Set to true if you use Autoscaler e.g. KEDA",
+                    "type": "boolean"
+        
+                },
                 "command": {
                     "default": [
                         "node",

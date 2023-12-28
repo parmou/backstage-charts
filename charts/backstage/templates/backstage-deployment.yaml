@@ -20,7 +20,7 @@ metadata:
     {{- include "common.tplvalues.render" ( dict "value" .Values.backstage.annotations "context" $) | nindent 4 }}
     {{- end }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
+  {{- if not .Values.backstage.autoscaling }}
   replicas: {{ .Values.backstage.replicas }}
   {{- end }}
   revisionHistoryLimit: {{ .Values.backstage.revisionHistoryLimit }}

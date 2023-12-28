@@ -81,7 +81,7 @@ ingress:
 backstage:
 
   # If you use HPA, set this to true
-  autoscaling: enabled
+  autoscaling: false
 
   # -- Number of deployment replicas
   replicas: 1
